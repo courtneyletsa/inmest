@@ -5,11 +5,7 @@ import { of } from 'rxjs';
   providedIn: 'root',
 })
 export class AttendanceService {
-<<<<<<< HEAD
-  private attendanceDb =  [
-=======
   private attendanceDb = [
->>>>>>> ae314d55c7d5e7f15ef759f101cdf4692f333022
     {
       id: 1,
       eit_id: 'john.doe@meltwater.org',
@@ -180,23 +176,11 @@ export class AttendanceService {
       punctuality: 'Good',
       requests: '4',
     },
-<<<<<<< HEAD
-  ]; 
-  constructor() { }
-=======
   ];
   constructor() {}
->>>>>>> ae314d55c7d5e7f15ef759f101cdf4692f333022
 
   getAttendance() {
     return of(this.attendanceDb);
-  }
-
-  getSingleAttendance(id: number) {
-    const user = this.attendanceDb.find((element) => 
-      element.id = id
-    );
-    return of (user);
   }
 
   getSingleAttendance(id: number) {
